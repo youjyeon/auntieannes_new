@@ -17,6 +17,12 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
+h3 {
+  font-size: 20px;
+  line-height: 1.1em;
+  margin-bottom: 8px;
+}
+
 a {
   text-decoration: none;
   color: #222;
@@ -42,7 +48,7 @@ header {
   top: 0;
   width: 100%;
   padding: 3% 0;
-  z-index: 10;
+  z-index: 1000;
 }
 
 header div {
@@ -106,10 +112,11 @@ header div .right a span:nth-of-type(3) {
 main {
   width: 100%;
   overflow: hidden;
-  position: relative;
 }
 
-main .burger {
+.burger {
+  display: none;
+  overflow-y: auto;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -120,7 +127,7 @@ main .burger {
           transform: translateX(100%);
 }
 
-main .burger header {
+.burger header {
   position: fixed;
   left: 0;
   top: 0;
@@ -129,7 +136,7 @@ main .burger header {
   z-index: 10;
 }
 
-main .burger header div {
+.burger header div {
   height: 100%;
   /*  margin:0 auto;  */
   margin-left: 20px;
@@ -144,21 +151,21 @@ main .burger header div {
           justify-content: center;
 }
 
-main .burger header div h2 {
+.burger header div h2 {
   /*  margin-top:10px; */
 }
 
-main .burger header div h2 a {
+.burger header div h2 a {
   vertical-align: middle;
 }
 
-main .burger header div h2 a img {
+.burger header div h2 a img {
   max-width: 165px;
   height: 28px;
   margin-bottom: 15px;
 }
 
-main .burger header div .close {
+.burger header div .close {
   margin-left: 30%;
   margin-right: 0;
   width: 50px;
@@ -170,11 +177,11 @@ main .burger header div .close {
   position: relative;
 }
 
-main .burger header div .close a {
+.burger header div .close a {
   display: block;
 }
 
-main .burger header div .close a span {
+.burger header div .close a span {
   position: absolute;
   right: 35%;
   top: 45%;
@@ -182,21 +189,21 @@ main .burger header div .close a span {
   width: 17px;
 }
 
-main .burger header div .close a span:nth-of-type(1) {
+.burger header div .close a span:nth-of-type(1) {
   -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
           transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-45deg) skew(0deg, 0deg);
 }
 
-main .burger header div .close a span:nth-of-type(2) {
+.burger header div .close a span:nth-of-type(2) {
   display: none;
 }
 
-main .burger header div .close a span:nth-of-type(3) {
+.burger header div .close a span:nth-of-type(3) {
   -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
           transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(45deg) skew(0deg, 0deg);
 }
 
-main .burger .bur_main {
+.burger .bur_main {
   width: 100%;
   /* height:100%; */
   padding: 70px 20px;
@@ -205,7 +212,7 @@ main .burger .bur_main {
   color: #fff;
 }
 
-main .burger .bur_main .wrap ul li {
+.burger .bur_main .wrap ul li {
   display: block;
   width: 100%;
   border: 0;
@@ -213,7 +220,7 @@ main .burger .bur_main .wrap ul li {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-main .burger .bur_main .wrap ul li a {
+.burger .bur_main .wrap ul li a {
   font-family: 'Cormorant Garamond', serif;
   font-weight: bold;
   font-size: 34px;
@@ -221,15 +228,15 @@ main .burger .bur_main .wrap ul li a {
   color: #fff;
 }
 
-main .burger .bur_main .wrap ul li .menu {
+.burger .bur_main .wrap ul li .menu {
   color: #ffb500;
 }
 
-main .burger .bur_main .wrap ul li:nth-of-type(5) {
+.burger .bur_main .wrap ul li:nth-of-type(5) {
   border-bottom: none;
 }
 
-main .burger .bur_main .wrap_2 {
+.burger .bur_main .wrap_2 {
   padding: 5px 0;
   margin-bottom: 10px;
   display: -webkit-box;
@@ -237,7 +244,7 @@ main .burger .bur_main .wrap_2 {
   display: flex;
 }
 
-main .burger .bur_main .wrap_2 ul {
+.burger .bur_main .wrap_2 ul {
   display: Table;
   width: 100%;
   height: 100%;
@@ -247,7 +254,7 @@ main .burger .bur_main .wrap_2 ul {
   margin-top: 15px;
 }
 
-main .burger .bur_main .wrap_2 ul li {
+.burger .bur_main .wrap_2 ul li {
   display: Table-cell;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   vertical-align: middle;
@@ -258,7 +265,7 @@ main .burger .bur_main .wrap_2 ul li {
   margin-right: 15px;
 }
 
-main .burger .bur_main .wrap_2 ul li a {
+.burger .bur_main .wrap_2 ul li a {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 13px;
   letter-spacing: -0.5px;
@@ -269,29 +276,29 @@ main .burger .bur_main .wrap_2 ul li a {
   color: #fff;
 }
 
-main .burger .bur_main .wrap_2 ul li a .circle img {
+.burger .bur_main .wrap_2 ul li a .circle img {
   margin: 0 auto 5px;
   display: block;
   max-width: 40px;
 }
 
-main .burger .bur_main .wrap_2 ul li .search {
+.burger .bur_main .wrap_2 ul li .search {
   color: #ffb500;
 }
 
-main .burger .bur_main .info {
+.burger .bur_main .info {
   height: auto;
   display: block;
 }
 
-main .burger .bur_main .info div {
+.burger .bur_main .info div {
   /*  margin-bottom: 10px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .burger .bur_main .info div .en-txt {
+.burger .bur_main .info div .en-txt {
   font-size: 16px !important;
   width: 80px;
   font-family: 'Cormorant Garamond', serif;
@@ -300,7 +307,7 @@ main .burger .bur_main .info div .en-txt {
   color: #fff;
 }
 
-main .burger .bur_main .info div .en-txt::after {
+.burger .bur_main .info div .en-txt::after {
   content: '|';
   width: 1px;
   height: 15px;
@@ -311,68 +318,69 @@ main .burger .bur_main .info div .en-txt::after {
                             right: 15px; */
 }
 
-main .burger .bur_main .info div p {
+.burger .bur_main .info div p {
   margin-bottom: 0.85em;
   line-height: 1.6;
   color: #dcdcdc;
   font-size: 12px;
 }
 
-main .burger .bur_main .info .sns-share {
+.burger .bur_main .info .sns-share {
   margin: 10px 0 15px 0;
 }
 
-main .burger .bur_main .info .sns-share ul {
+.burger .bur_main .info .sns-share ul {
   width: 100%;
   list-style: none outside;
 }
 
-main .burger .bur_main .info .sns-share ul li {
+.burger .bur_main .info .sns-share ul li {
   margin: 0 5px;
   display: inline-block;
 }
 
-main .burger .bur_main .info .sns-share ul li a {
+.burger .bur_main .info .sns-share ul li a {
   color: #dcdcdc;
 }
 
-main .burger .bur_main .info .sns-share ul li a img {
+.burger .bur_main .info .sns-share ul li a img {
   width: 32px;
 }
 
-main .burger.active {
+.burger.active {
+  display: block;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
 
-main .main_top {
+.main_top {
   /*   font-family: 'Noto Sans KR', sans-serif; */
   position: relative;
   width: 100%;
   height: 100% !important;
 }
 
-main .main_top img {
+.main_top img {
   width: 100%;
 }
 
-main .main_top .main_txt {
+.main_top .main_txt {
   position: absolute;
   left: 10%;
   top: 20%;
 }
 
-main .main_top .main_txt .main_txt01 {
+.main_top .main_txt .main_txt01 {
   margin-bottom: 3%;
 }
 
-main .main_top .main_txt .main_txt01 span {
+.main_top .main_txt .main_txt01 span {
   color: #ffb500;
   font-size: 28px;
   font-weight: bold;
 }
 
-main .main_top .main_txt .main_txt01 .main_txt01_03 {
+.main_top .main_txt .main_txt01 .main_txt01_03 {
   font-weight: normal;
   letter-spacing: -1px;
   margin: 15px 0 35px;
@@ -381,7 +389,7 @@ main .main_top .main_txt .main_txt01 .main_txt01_03 {
   font-size: 14px;
 }
 
-main .main_top .product-img .pro-ani {
+.main_top .product-img .pro-ani {
   -webkit-animation: rot03 3s ease infinite;
           animation: rot03 3s ease infinite;
   position: absolute;
@@ -391,18 +399,18 @@ main .main_top .product-img .pro-ani {
   width: 65%;
 }
 
-main .main_top .product-img .pro-ani img {
+.main_top .product-img .pro-ani img {
   width: 100%;
 }
 
-main .main_top .dots {
+.main_top .dots {
   display: inline-block;
   position: absolute;
   left: 30px;
   top: 44%;
 }
 
-main .main_top .dots button {
+.main_top .dots button {
   color: #fff;
   background-color: transparent;
   width: 50px;
@@ -419,12 +427,12 @@ main .main_top .dots button {
   margin-right: 5px;
 }
 
-main .main_top .dots button.active {
+.main_top .dots button.active {
   border: 2px dotted #fff;
   color: #ffb500;
 }
 
-main .main_top .owl-nav {
+.main_top .owl-nav {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -435,7 +443,7 @@ main .main_top .owl-nav {
   display: flex;
 }
 
-main .main_top .owl-nav .owl-prev {
+.main_top .owl-nav .owl-prev {
   color: inherit;
   border: none;
   padding: 0 !important;
@@ -445,12 +453,12 @@ main .main_top .owl-nav .owl-prev {
   line-height: 60px;
 }
 
-main .main_top .owl-nav .owl-prev span {
+.main_top .owl-nav .owl-prev span {
   font-size: 35px;
   color: #005ad5;
 }
 
-main .main_top .owl-nav .owl-next {
+.main_top .owl-nav .owl-next {
   width: 60px;
   color: inherit;
   border: none;
@@ -460,12 +468,12 @@ main .main_top .owl-nav .owl-next {
   line-height: 60px;
 }
 
-main .main_top .owl-nav .owl-next span {
+.main_top .owl-nav .owl-next span {
   font-size: 35px;
   color: #fff;
 }
 
-main .first {
+.first {
   z-index: 100;
   padding: 5% 0;
   margin: 10% 0;
@@ -473,7 +481,7 @@ main .first {
   /*   font-family: 'Noto Sans KR', sans-serif; */
 }
 
-main .first h2 {
+.first h2 {
   font-family: 'Cormorant Garamond', serif;
   width: 100%;
   padding-top: 60px;
@@ -486,13 +494,13 @@ main .first h2 {
   letter-spacing: -0.02em;
 }
 
-main .first .top_1 {
+.first .top_1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .first .top_1 .img {
+.first .top_1 .img {
   margin-left: -30px;
   -webkit-animation: rot02 3s ease infinite;
           animation: rot02 3s ease infinite;
@@ -501,21 +509,21 @@ main .first .top_1 .img {
   height: 250px;
 }
 
-main .first .top_1 .img img {
+.first .top_1 .img img {
   width: 100%;
   height: 100%;
   -webkit-transform: translateY(-10%);
           transform: translateY(-10%);
 }
 
-main .first .top_1 .txt {
+.first .top_1 .txt {
   position: absolute;
   right: 30px;
   top: 240px;
   letter-spacing: -1px;
 }
 
-main .first .top_1 .txt h3 {
+.first .top_1 .txt h3 {
   font-size: 20px;
   color: #1c1c1c;
   line-height: 1.1em;
@@ -523,25 +531,25 @@ main .first .top_1 .txt h3 {
   font-weight: 600;
 }
 
-main .first .top_1 .txt p {
+.first .top_1 .txt p {
   font-size: 14px;
   color: #777777;
   margin: 0.85em 0;
 }
 
-main .first .top_2 {
+.first .top_2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .first .top_2 .txt {
+.first .top_2 .txt {
   position: absolute;
   left: 70px;
   bottom: 100px;
 }
 
-main .first .top_2 .txt h3 {
+.first .top_2 .txt h3 {
   font-size: 20px;
   color: #1c1c1c;
   line-height: 1.1em;
@@ -549,12 +557,12 @@ main .first .top_2 .txt h3 {
   font-weight: 600;
 }
 
-main .first .top_2 .txt p {
+.first .top_2 .txt p {
   font-size: 14px;
   color: #777777;
 }
 
-main .first .top_2 .img {
+.first .top_2 .img {
   margin-left: 40%;
   -webkit-animation: rot03 3s ease infinite;
           animation: rot03 3s ease infinite;
@@ -562,7 +570,7 @@ main .first .top_2 .img {
   height: 200px;
 }
 
-main .first .top_2 .img img {
+.first .top_2 .img img {
   width: 100%;
   height: 100%;
 }
@@ -627,30 +635,30 @@ main .first .top_2 .img img {
   }
 }
 
-main .second {
+.second {
   margin-top: 20%;
 }
 
-main .second .box01 {
+.second .box01 {
   position: relative;
 }
 
-main .second .box01 a {
+.second .box01 a {
   width: 100%;
 }
 
-main .second .box01 a img {
+.second .box01 a img {
   width: 100%;
 }
 
-main .second .box01 .txt01 {
+.second .box01 .txt01 {
   position: absolute;
   left: 30%;
   top: 35%;
   text-align: center;
 }
 
-main .second .box01 .txt01 .en-txt {
+.second .box01 .txt01 .en-txt {
   font-family: 'Cormorant Garamond', serif;
   font-size: 24px;
   color: #fff;
@@ -658,7 +666,7 @@ main .second .box01 .txt01 .en-txt {
   line-height: 1.1em;
 }
 
-main .second .box01 .txt01 p {
+.second .box01 .txt01 p {
   color: #fff;
   font-size: 14px;
   letter-spacing: -1px;
@@ -666,14 +674,14 @@ main .second .box01 .txt01 p {
   opacity: 0.8;
 }
 
-main .second .box01 .txt02 {
+.second .box01 .txt02 {
   position: absolute;
   left: 20%;
   top: 35%;
   text-align: center;
 }
 
-main .second .box01 .txt02 .en-txt {
+.second .box01 .txt02 .en-txt {
   font-family: 'Cormorant Garamond', serif;
   font-size: 24px;
   color: #fff;
@@ -681,7 +689,7 @@ main .second .box01 .txt02 .en-txt {
   line-height: 1.1em;
 }
 
-main .second .box01 .txt02 p {
+.second .box01 .txt02 p {
   color: #fff;
   font-size: 14px;
   letter-spacing: -1px;
@@ -689,14 +697,14 @@ main .second .box01 .txt02 p {
   opacity: 0.8;
 }
 
-main .second .box01 .txt03 {
+.second .box01 .txt03 {
   position: absolute;
   left: 20%;
   top: 35%;
   text-align: center;
 }
 
-main .second .box01 .txt03 .en-txt {
+.second .box01 .txt03 .en-txt {
   font-family: 'Cormorant Garamond', serif;
   font-size: 24px;
   color: #fff;
@@ -704,7 +712,7 @@ main .second .box01 .txt03 .en-txt {
   line-height: 1.1em;
 }
 
-main .second .box01 .txt03 p {
+.second .box01 .txt03 p {
   /*  font-family: 'Noto Sans KR', sans-serif; */
   color: #fff;
   font-size: 14px;
@@ -713,7 +721,7 @@ main .second .box01 .txt03 p {
   opacity: 0.8;
 }
 
-main .second .box01::before {
+.second .box01::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -723,14 +731,14 @@ main .second .box01::before {
   background-color: rgba(17, 17, 17, 0.35);
 }
 
-main .third {
+.third {
   margin: 80px auto 80px;
   width: 100%;
   text-align: center;
   /*  padding: 0 5%; */
 }
 
-main .third .title {
+.third .title {
   font-family: 'Cormorant Garamond', serif;
   font-size: 34px;
   color: #005ad5;
@@ -739,7 +747,7 @@ main .third .title {
   letter-spacing: -0.02em;
 }
 
-main .third .third-txt {
+.third .third-txt {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16px;
   letter-spacing: -1px;
@@ -750,21 +758,21 @@ main .third .third-txt {
   margin-bottom: 30px;
 }
 
-main .third .third-txt b {
+.third .third-txt b {
   color: #000;
 }
 
-main .third .third-img {
+.third .third-img {
   padding: 0 5%;
   width: 100%;
   position: relative;
 }
 
-main .third .third-img img {
+.third .third-img img {
   width: 100%;
 }
 
-main .third .third-img::after {
+.third .third-img::after {
   content: '';
   position: absolute;
   bottom: -20px;
@@ -775,11 +783,11 @@ main .third .third-img::after {
   z-index: -1;
 }
 
-main .third .third-button {
+.third .third-button {
   padding-top: 60px;
 }
 
-main .third .third-button a {
+.third .third-button a {
   color: #fff;
   font-size: 17px;
   width: 190px;
@@ -790,6 +798,7 @@ main .third .third-button a {
   font-family: 'Noto Sans KR', sans-serif;
   border-radius: 50px;
   margin: 0 auto;
+  padding-right: 20px;
   background: #ffb500 url("../img/main/btn-arrow.png") no-repeat 85% center;
 }
 
@@ -904,7 +913,8 @@ footer .copy-right {
   background: #ffb500;
   text-align: center;
   color: #fff;
-  padding: 20px 0;
+  padding: 12px 0;
   font-size: 12px;
+  line-height: 1.6;
 }
 /*# sourceMappingURL=index.css.map */
