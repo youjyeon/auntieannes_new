@@ -159,13 +159,14 @@
     padding:0 20px; margin-bottom: 20px;}
 .swiper2-slide{ width:320px; position: relative; }
 .swiper2-slide > img{width:320px;  }
-.swiper2-pagination{text-align: center;}
-.swiper2-pagination-bullet{
+.pagination2{   background-color: #ffb500;text-align: center;}
+/* .pagination2-bullets{
     width:11px; height:11px;
+    background-color: transparent;
 }
-.swiper2-pagination-bullet-active{
+.pagination2-bullets-active{
     background-color: #ffb500;
-}
+} */
 .swiper2-button-prev{
       z-index: 10;
       position: absolute; bottom:10%; left:20px; width:45px;

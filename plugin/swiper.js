@@ -44,11 +44,10 @@ var swiper = new Swiper(".slide", {
 
   var swiper2 = new Swiper(".slide2", {
     mousewheel: false,
-    parallax: true,
+    //parallax: true,
     pagination: {
-      el: ".swiper2-pagination",
+      el: ".pagination2",
       clickable: true,
-      type: 'bullets',
     },
   
     navigation: {

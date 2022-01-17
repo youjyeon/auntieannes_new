@@ -10,15 +10,10 @@ $('.menu-tap div').on('click',function(){
 })
 
 /* 버거메뉴 */
-
 $('.right').on('click',function(){
     // $(this).addClass('on');
     $('.burger').addClass('active');
 
-})
-$('.more_view').on('click',function(){
-    $('.grid-sort-container').fadeIn(0);
-    console.log(3);
 })
 $('.burger .close').on('click',function(){
     $('.burger').removeClass('active');
