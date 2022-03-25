@@ -1,6 +1,5 @@
 @import '_common.scss';
 
-main{}
     .first{
         padding: 40px 0 10px !important;
         width:100%;
@@ -55,9 +54,9 @@ main{}
                 }
                 .deliv-check{
                     margin: 8px 0 !important;
-                    display: flex;// width: 200px !important;
+                    display: flex;
                 div{
-                    margin-left: 0 !important; // width: 47% !important;
+                    margin-left: 0 !important; 
                     padding-right: 20px;
                     label[class=""]{
                         padding-left: 38px;
@@ -140,10 +139,6 @@ main{}
                                     display: flex;
                                     p{  font-size: 13px; margin: 10px 15px 0 0;}
                                     img{vertical-align:sub; padding-right: 5px;}
-                                    .open_time{
-                                        img{}
-                                        span{}
-                                    }
                                 }
                                 .st-cont{
                                     margin-top: 10px;
@@ -156,7 +151,6 @@ main{}
                                         font-weight: 500;
                                         margin-right: 5px;
                                     }
-                                    .pic{}
                                     .deli{ color: #005ad5;}
                                 }
                             }

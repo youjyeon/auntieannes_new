@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
 /* common.css */
-*{ box-sizing: border-box;  /* font-family: 'Noto Sans KR', sans-serif; */ }
+*{ box-sizing: border-box;   }
 body{margin:0;}
 h1,h2,h3,h4,h5,h6,p{margin:0;}
 h3{font-size: 20px;line-height: 1.1em;margin-bottom: 8px;}
@@ -24,7 +24,7 @@ header{
         z-index: 10;
         div{
             margin:0 auto; 
-            width:85%;   /*   height: auto !important; */
+            width:85%;   
             background: transparent;
             display: flex;
             justify-content: center;
@@ -84,18 +84,15 @@ header{
             position: fixed;
             left:0; top:0; 
             width:100%;
-           /*  padding: 10px 0; */
             z-index: 10;
             div{
                 height:100%;
-               /*  margin:0 auto;  */
                 margin-left:20px;
                 width:85%; height: auto !important;
                 background: transparent;
                 display: flex;
                 justify-content: center;
                 h2{
-                   /*  margin-top:10px; */
                     a{
                         vertical-align: middle;
                         img{ max-width:165px;  height: 28px; margin-bottom: 15px;}
@@ -128,7 +125,7 @@ header{
             }
         }
         .bur_main{   
-            width:100%; /* height:100%; */
+            width:100%; 
             padding: 70px 20px ;
             background: #004bba;
             overflow: scroll;
@@ -148,7 +145,6 @@ header{
                             position: relative;
                             margin: 5px 0;
                             font-weight: bold;
-                            .en-txt{}
                         }
                     }
                     .menu{
@@ -173,7 +169,6 @@ header{
                             vertical-align: top;
                             li{
                                 margin-right: 15px;
-                                // display: flex;
                                 a{font-size: 13px; color: #fff; transition: all 0.3s ease;
                                     letter-spacing: -0.5px;
                                     position: relative;   font-weight: 400;}
@@ -310,22 +305,18 @@ header{
                                     }
                                 }
                             }
-                            .search{color:#ffb500;}
                         }
                     }
             } 
                 .info{
                     height: auto;
                     display: block;
-                   
                     div{
-                       /*  margin-bottom: 10px; */
                         display: flex;
                         .en-txt{
                             font-size: 16px !important;
                             width:80px;
                             font-family: 'Cormorant Garamond', serif;
-                            /* margin: 5px 0; */
                             font-weight: bold;
                             color:#fff;
                         }
@@ -334,10 +325,6 @@ header{
                             width: 1px;
                             height: 15px;
                             margin-left:10px;
-                            /* bottom: 50%;
-                            margin-bottom: -8px;
-                            left: auto;
-                            right: 15px; */
                         }
                         p{   margin-bottom: 0.85em ;line-height: 1.6;
                             color: #dcdcdc;   font-size: 12px;
