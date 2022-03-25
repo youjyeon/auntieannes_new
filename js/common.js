@@ -1,7 +1,6 @@
 window.onload = function(){
     $('.main_txt01 span').addClass('active');
     $('.menu-tap .left').addClass('active');
-    console.log('start');
 }
 
 $('.menu-tap div').on('click',function(){
@@ -11,7 +10,6 @@ $('.menu-tap div').on('click',function(){
 
 /* 버거메뉴 */
 $('.right').on('click',function(){
-    // $(this).addClass('on');
     $('.burger').addClass('active');
 
 })

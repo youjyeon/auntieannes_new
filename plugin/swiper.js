@@ -6,8 +6,7 @@ var swiper = new Swiper(".slide", {
       el: ".swiper-pagination",
       clickable: true,
       renderBullet:function(index, className){
-        return '<div class="' + className + '"><span>' +
-(bullet[index]) + '</span></div>'
+        return '<div class="' + className + '"><span>' + (bullet[index]) + '</span></div>'
       }
     },
     autoplay: {
@@ -35,7 +34,6 @@ var swiper = new Swiper(".slide", {
     on: {
 
       slideChange: function (e) {
-        console.log(e);
         $('.swiper-slide > div').removeClass('active');
         $('.swiper-slide').eq(e.activeIndex).find('> div').eq(0).addClass('active');
       }
@@ -44,7 +42,6 @@ var swiper = new Swiper(".slide", {
 
   var swiper2 = new Swiper(".slide2", {
     mousewheel: false,
-    //parallax: true,
     pagination: {
       el: ".pagination2",
       clickable: true,
