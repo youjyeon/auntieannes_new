@@ -1,8 +1,16 @@
 window.onload = function(){
     $('.main_txt01 span').addClass('active');
     $('.menu-tap .left').addClass('active');
+    console.log('start');
 }
-
+$('.left2').on('click',function(){
+    $('.swiper-slide img').fadeOut(100);
+    $('.img2').fadeIn(100);
+})
+$('.left').on('click',function(){
+    $('.swiper-slide img').fadeIn(100);
+    $('.img2').fadeOut(100);
+})
 $('.menu-tap div').on('click',function(){
     $('.menu-tap > div').removeClass('active');
     $(this).addClass('active');
@@ -10,6 +18,7 @@ $('.menu-tap div').on('click',function(){
 
 /* 버거메뉴 */
 $('.right').on('click',function(){
+    // $(this).addClass('on');
     $('.burger').addClass('active');
 
 })

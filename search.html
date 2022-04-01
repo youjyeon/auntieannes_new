@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>앤티앤스프레즐</title>
     <link rel="stylesheet" href="css/search.css">
     <link
     rel="stylesheet"
@@ -16,7 +16,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="./plugin/swiper.js"></script>
     <script defer src="./js/common.js"></script>
-
+    <script defer src="./js/more.js"></script>
 </head>
 <body>
     <header>
@@ -199,23 +199,23 @@
                     <option value="중구">중구</option>
                     <option value="중랑구">중랑구</option>
                 </select>
-
             <div class="deliv-check">
                 <div>
-                    <label class="">
+                    <label class="" id="pick_de">
                         <input type="checkbox" id="deliv" name="deliv">
                         <span>배달</span>
                     </label>
                 </div>
                 <div>
-                    <label class="">
-                        <input type="checkbox" id="pick" name="pick"><span>픽업</span>
+                    <label class="" id="pick_la">
+                        <input type="checkbox" id="pick" name="pick">
+                        <span>픽업</span>
                     </label>
                 </div>
             </div>
             <div class="sear-wp">
                 <input type="text" id="search_name" name="search_name" placeholder="검색어를 입력해주세요." >
-                <input type="button"  value="검색">
+                <input type="button"id="search_button"  value="검색">
             </div>
         </div>
     </form>
@@ -223,274 +223,7 @@
         <div class="st-table">
             <div class="st-wrap">
                 <ul>
-                    <li id="li_306">
-                        <div class="store-li">
-                            <div class="store-desc">
-                                <div class="store-text-wrap">
-                                    <div class="store-text">
-                                        <h3>롯데백화점 건대 스타시티점</h3>
-                                        <address>서울특별시 광진구 능동로 92 롯데백화점 건대 스타시티점 지하1층</address>
-                                        <div class="info">
-                                            <p class="tel_num">
-                                            <img src="img/search/st-i01.png"> 
-                                            -</p>
-                                            <p class="open_time">
-                                                <img src="img/search/st-i02.png"> 
-                                                <span>월~목10:30~20:00 / 금~일 10:30~20:30</span>
-                                            </p>
-                                        </div>
-                                        <div class="st-cont"></div>
-                                    </div>
-                                </div>
-    
-                                <div class="st-pin">
-                                    <img class="img" src="img/search/st-pin.png">
-                                    <img class="act" src="img/search/st-pin_act.png">
-                                </div>
-                            </div>
-                        </div> 
-                    </li>
-                    <li id="li_305">
-                        <div class="store-li">
-                            <div class="store-desc">
-                                <div class="store-text-wrap">
-                                    <div class="store-text">
-                                        <h3>AK광명점</h3>
-                                        <address>경기도 광명시 신기로 20 지하1층 앤티앤스 프레즐</address>
-                                        <div class="info">
-                                            <p class="tel_num">
-                                                <img src="img/search/st-i01.png">
-                                            070-7585-1106</p>
-                                            <p class="open_time">
-                                                <img src="img/search/st-i02.png"> 
-                                                <span>매일 10:30~22:00 </span>
-                                            </p>
-                                        </div>
-                                        <div class="st-cont"></div>
-                                    </div>
-                                </div>
-    
-                                <div class="st-pin">
-                                    <img class="img" src="img/search/st-pin.png">
-                                    <img class="act" src="img/search/st-pin_act.png">
-                                </div>
-                                
-                            </div> <!-- //store-desc -->
-                        </div> <!-- //store-li-->
-                    </li>
-                    <li id="li_304">
-                        <div class="store-li">
-                            <div class="store-desc">
-                                <div class="store-text-wrap">
-                                    <div class="store-text">
-                                        <h3>전주대방디엠시티</h3>
-                                        <address>전북 전주시 덕진구 기지로 77</address>
-                                        <div class="info">
-                                            <p class="tel_num">
-                                                <img src="img/search/st-i01.png">
-                                            -</p>
-                                            <p class="open_time">
-                                                <img src="img/search/st-i02.png">
-                                                <span>11:00~21:00</span>
-                                            </p>
-                                        </div>
-                                        <div class="st-cont">
-                                                                                        <div class="pic">픽업</div>
-                                                <div class="deli">배달</div>
-                                                                                    </div>
-                                    </div>
-                                </div>
-    
-                                <div class="st-pin">
-                                    <img class="img" src="img/search/st-pin.png">
-                                    <img class="act" src="img/search/st-pin_act.png">
-                                </div>
-                                
-                            </div> <!-- //store-desc -->
-                        </div> <!-- //store-li-->
-                    </li>
-                    <li id="li_303">
-                        <div class="store-li">
-                            <div class="store-desc">
-                                <div class="store-text-wrap">
-                                    <div class="store-text">
-                                        <h3>청량리역사</h3>
-                                        <address>서울특별시 동대문구 왕산로 214 청량리역 3층 맞이방 앤티앤스 프레즐</address>
-                                        <div class="info">
-                                            <p class="tel_num">
-                                                <img src="img/search/st-i01.png"> 
-                                            -</p>
-                                            <p class="open_time">
-                                                <img src="img/search/st-i02.png">
-                                                <span>07:00 ~ 21:00</span>
-                                            </p>
-                                        </div>
-                                        <div class="st-cont">
-                                                                                </div>
-                                    </div>
-                                </div>
-    
-                                <div class="st-pin">
-                                    <img class="img" src="img/search/st-pin.png">
-                                    <img class="act" src="img/search/st-pin_act.png">
-                                </div>
-                                
-                            </div> <!-- //store-desc -->
-                        </div> <!-- //store-li-->
-                    </li>
-                    <li id="li_302">
-                        <div class="store-li">
-                            <div class="store-desc">
-                                <div class="store-text-wrap">
-                                    <div class="store-text">
-                                        <h3>여의도 CGV점</h3>
-                                        <address>서울특별시 영등포구 국제금융로 10  (여의도동, 국제금융센터) 지하3층</address>
-                                        <div class="info">
-                                            <p class="tel_num"><img src="img/search/st-i01.png"> -</p>
-                                            <p class="open_time"><img src="img/search/st-i02.png"> <span>10:00 ~ 21:00</span></p>
-                                        </div>
-                                        <div class="st-cont">
-                                            <div class="pic">픽업</div>
-                                            <div class="deli">배달</div>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="st-pin">
-                                    <img class="img" src="img/search/st-pin.png">
-                                    <img class="act" src="img/search/st-pin_act.png">
-                                
-                            </div> <!-- //store-desc -->
-                        </div> <!-- //store-li-->
-                    </li>
-                    <li id="li_301">
-                        <div class="store-li">
-                            <div class="store-desc">
-                                <div class="store-text-wrap">
-                                    <div class="store-text">
-                                        <h3>하나로마트 포항점 </h3>
-                                        <address>경상북도 포항시 북구 장량로 171 하나로마트 포항점 1층 앤티앤스 프레즐 </address>
-                                        <div class="info">
-                                            <p class="tel_num"><img src="img/search/st-i01.png"> -</p>
-                                            <p class="open_time"><img src="img/search/st-i02.png"> <span>09:00 ~ 21:00</span></p>
-                                        </div>
-                                        <div class="st-cont">
-                                            <div class="pic">픽업</div>
-                                            <div class="deli">배달</div>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="st-pin">
-                                    <img class="img" src="img/search/st-pin.png">
-                                    <img class="act" src="img/search/st-pin_act.png">
-                                </div>
-                                
-                            </div> <!-- //store-desc -->
-                        </div> <!-- //store-li-->
-                    </li>
-                    <li id="li_300">
-                        <div class="store-li">
-                            <div class="store-desc">
-                                <div class="store-text-wrap">
-                                    <div class="store-text">
-                                        <h3>제주 서귀포점</h3>
-                                        <address>제주특별자치도 서귀포시 동문로 70 1층 앤티앤스 프레즐</address>
-                                        <div class="info">
-                                            <p class="tel_num"><img src="img/search/st-i01.png"> 064-763-1110</p>
-                                            <p class="open_time"><img src="img/search/st-i02.png"> <span>10:00 ~ 21:00</span></p>
-                                        </div>
-                                        <div class="st-cont">
-                                            <div class="pic">픽업</div>
-                                            <div class="deli">배달</div>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="st-pin">
-                                    <img class="img" src="img/search/st-pin.png">
-                                    <img class="act" src="img/search/st-pin_act.png">
-                                </div>
-                                
-                            </div> <!-- //store-desc -->
-                        </div> <!-- //store-li-->
-                    </li>
-                    <li id="li_299">
-                        <div class="store-li">
-                            <div class="store-desc">
-                                <div class="store-text-wrap">
-                                    <div class="store-text">
-                                        <h3>롯데프리미엄아울렛 타임빌라스점</h3>
-                                        <address>경기 의왕시 학의동 1039 롯데프리미엄아울렛 타임빌라스 앤티앤스 프레즐</address>
-                                        <div class="info">
-                                            <p class="tel_num"><img src="img/search/st-i01.png"> -</p>
-                                            <p class="open_time"><img src="img/search/st-i02.png"> <span>매일 10:30 ~ 21:00</span></p>
-                                        </div>
-                                        <div class="st-cont">
-                                                                                </div>
-                                    </div>
-                                </div>
-    
-                                <div class="st-pin">
-                                    <img class="img" src="img/search/st-pin.png">
-                                    <img class="act" src="img/search/st-pin_act.png">
-                                </div>
-                                
-                            </div> <!-- //store-desc -->
-                        </div> <!-- //store-li-->
-                    </li>
-                    <li id="li_298">
-                        <div class="store-li" >
-                            <div class="store-desc">
-                                <div class="store-text-wrap">
-                                    <div class="store-text">
-                                        <h3>신세계백화점 대전 Art&amp;Science</h3>
-                                        <address>대전 유성구 엑스포로 17 CMB 엑스포아트홀 지하 1층 앤티앤스 프레즐</address>
-                                        <div class="info">
-                                            <p class="tel_num"><img src="img/search/st-i01.png"> 010-2823-0461</p>
-                                            <p class="open_time"><img src="img/search/st-i02.png"> <span>평일 10:30- 20:00 / 주말 10:30- 20:30</span></p>
-                                        </div>
-                                        <div class="st-cont">
-                                                                                </div>
-                                    </div>
-                                </div>
-    
-                                <div class="st-pin">
-                                    <img class="img" src="img/search/st-pin.png">
-                                    <img class="act" src="img/search/st-pin_act.png">
-                                </div>
-                                
-                            </div> <!-- //store-desc -->
-                        </div> <!-- //store-li-->
-                    </li>
-                    <li id="li_297">
-                        <div class="store-li">
-                            <div class="store-desc">
-                                <div class="store-text-wrap">
-                                    <div class="store-text">
-                                        <h3>하나로마트 포항점</h3>
-                                        <address>경상북도 포항시 북구 장량로 171 하나로마트 포항점 1층 앤티앤스 프레즐</address>
-                                        <div class="info">
-                                            <p class="tel_num"><img src="img/search/st-i01.png"> -</p>
-                                            <p class="open_time"><img src="img/search/st-i02.png"> <span>매일 10:00~21:00 </span></p>
-                                        </div>
-                                        <div class="st-cont">
-                                            <div class="pic">픽업</div>
-                                            <div class="deli">배달</div>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div class="st-pin">
-                                    <img class="img" src="img/search/st-pin.png">
-                                    <img class="act" src="img/search/st-pin_act.png">
-                                </div>
-                                
-                            </div> <!-- //store-desc -->
-                        </div> <!-- //store-li-->
-                    </li>
-    
-                    
+           
                 </ul>
             </div>
     
