@@ -6,7 +6,8 @@ var swiper = new Swiper(".slide", {
       el: ".swiper-pagination",
       clickable: true,
       renderBullet:function(index, className){
-        return '<div class="' + className + '"><span>' + (bullet[index]) + '</span></div>'
+        return '<div class="' + className + '"><span>' +
+(bullet[index]) + '</span></div>'
       }
     },
     autoplay: {
@@ -43,7 +44,7 @@ var swiper = new Swiper(".slide", {
   var swiper2 = new Swiper(".slide2", {
     mousewheel: false,
     pagination: {
-      el: ".pagination2",
+      el: ".slide2 .pagination2",
       clickable: true,
     },
   
